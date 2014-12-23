@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>slick - the last carousel you'll ever need</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+		<div style="width:50%;">
+			<div class="slider" style="margin-left:200px; position:relative;">
+			<div class="hide" style="position:absolute; width:125%; height:100%; top: 0; left:0;"></div>
+				<p>Retro taxidermy polaroid wolf aesthetic hella. Odd Future kogi vegan kale chips Schlitz bespoke, taxidermy yr locavore. Pour-over lomo Intelligentsia, Carles wolf selfies Godard vinyl cliche DIY ennui umami +1 put a bird on it messenger bag. Raw denim cray literally, letterpress hella tousled cornhole bitters four loko 3 wolf moon leggings. Pinterest heirloom ennui, YOLO 3 wolf moon lo-fi typewriter bespoke Kickstarter. Portland Vice gentrify Thundercats readymade leggings YOLO letterpress, Truffaut Cosby sweater freegan bicycle rights. Drinking vinegar keffiyeh health goth shabby chic cornhole, twee flannel pug brunch.</p>
+				<div class="slider-for" id="slider-for">
+
+				</div>
+				<div class="slider-nav" id="slider-nav">
+
+				</div>
+			</div>
+		</div>
+
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="slick/slick.js"></script>
+		<script type="text/javascript" src="flickr.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.slider').flickrPicker({largeDiv:'.slider-for', smallDiv:'.slider-nav', hideDiv:'.hide', photosetID: '72157648525457150', limit: 10});
+			});
+		</script>
+</body>
+</html>
